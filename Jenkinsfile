@@ -18,7 +18,7 @@ sh "${mvnHome}/bin/mvn sonar:sonar -f MyAwesomeApp/pom.xml"
 
    stage ('DEV Deploy')  {
       echo "deploying to DEV Env "
-      deploy adapters: [tomcat8(credentialsId: '3f27da26-63a2-4857-a0d1-972099a1d6a6', path: '', url: 'http://34.205.24.116:8080')], contextPath: null, war: '**/*.war'
+      deploy adapters: [tomcat9(credentialsId: '7b527f77-3ef1-4d11-b552-748de9b7ed7b', path: '', url: 'http://34.205.24.116:8080')], contextPath: null, war: '**/*.war'
     }
 stage ('DEV Approve') {
 echo "Taking approval from DEV"
