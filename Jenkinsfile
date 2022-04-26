@@ -30,7 +30,7 @@ stage ('Slack Notification') {
 
     slackSend(channel:'myawesomeapp', message: "Job is successful, here is the info -  Job '${env.JOB_NAME} [${env.BUILD_NUMBER}]' (${env.BUILD_URL})")
 
- }
+  }
    
 }
    
